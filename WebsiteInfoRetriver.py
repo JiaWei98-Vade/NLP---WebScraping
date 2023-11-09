@@ -121,6 +121,9 @@ if response.status_code == 200:
     # Convert the data to JSON and print it
     json_data = json.dumps(data, indent=4, ensure_ascii=False)
     print(json_data)
+    
+    with open('domain_results.json', 'w') as json_file:
+        json.dump(json_data, json_file, indent=4)
 
 else:
     print('Failed to retrieve the webpage. Status code:', response.status_code)
