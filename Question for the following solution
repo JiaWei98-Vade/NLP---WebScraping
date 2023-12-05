@@ -1,0 +1,12 @@
+The following attachment is the question.
+
+https://techcrunch.com/2023/10/27/x-is-launching-new-premium-and-basic-subscription-tiers/
+
+Assuming that the above link (i.e. entire description) is the raw and unstructured information we collected in our database, the information and format (JSON) we expect to extract are as follows:
+
+{
+"related_companies": [{ "company_name":"X", "company_domain":"x.com" }, { "company_name":"Bloomberg", "company_domain":"bloomberg.com" }], 
+"topic":"X is launching two new subscription tiers, including a ‘Premium+’ ad-free plan"
+}
+
+// Reuters, Fortune could be related companies, but techcrunch is not related to this article 
